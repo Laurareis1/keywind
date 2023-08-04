@@ -17,7 +17,7 @@
   section
 >
   <#if section="header">
-    ${msg("loginAccountTitle")}
+    ${msg("loginAccountTitle")} 
   <#elseif section="form">
     <#if realm.password>
       <@form.kw
@@ -40,6 +40,7 @@
           name="username"
           type="text"
           value=(login.username)!''
+          
         />
         <@input.kw
           invalid=messagesPerField.existsError("username", "password")
@@ -64,9 +65,14 @@
           </div>
         </#if>
         <@buttonGroup.kw>
-          <@button.kw color="primary" name="login" type="submit">
+        <div class= "flex flex-col" style="
+    width: 272px;
+    margin-left: auto;
+    margin-right: auto;">
+          <@button.kw color="primary" name="login" type="submit ">
             ${msg("doLogIn")}
           </@button.kw>
+          </div> 
         </@buttonGroup.kw>
       </@form.kw>
     </#if>

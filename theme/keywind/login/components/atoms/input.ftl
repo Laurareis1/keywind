@@ -9,7 +9,13 @@
   required=true
   rest...
 >
-  <div>
+  <div style="
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+   background: 'rgba(173,216,230,0.15)'
+
+" >
     <label class="sr-only" for="${name}">
       ${label}
     </label>
@@ -27,6 +33,7 @@
       <#list rest as attrName, attrValue>
         ${attrName}="${attrValue}"
       </#list>
+      
     >
     <#if invalid?? && message??>
       <div class="mt-2 text-red-600 text-sm">
