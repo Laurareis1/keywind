@@ -9,13 +9,11 @@
   required=true
   rest...
 >
-  <div style="
+  <div style=" 
     width: 290px;
     margin-left: auto;
     margin-right: auto;
-   background: 'rgba(173,216,230,0.15)'
-
-" >
+   background: 'rgba(173,216,230,0.15)'" >
     <label class="sr-only" for="${name}">
       ${label}
     </label>
@@ -36,7 +34,7 @@
       
     >
     <#if invalid?? && message??>
-      <div class="mt-2 text-red-600 text-sm">
+      <div class="mt-2 text-red-600 text-sm flex">
         ${message?no_esc}
       </div>
     </#if>

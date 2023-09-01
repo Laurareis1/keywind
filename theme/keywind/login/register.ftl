@@ -75,9 +75,14 @@
         <div class="g-recaptcha" data-sitekey="${recaptchaSiteKey}" data-size="compact"></div>
       </#if>
       <@buttonGroup.kw>
+      <div class="flex flex-col" style="
+    width: 272px;
+    margin-left: auto;
+    margin-right: auto;">
         <@button.kw color="primary" type="submit">
           ${msg("doRegister")}
         </@button.kw>
+        </div>
       </@buttonGroup.kw>
     </@form.kw>
   <#elseif section="nav">
